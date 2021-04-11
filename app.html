@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programing languages</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        body {
+            text-align: center;
+            background-image: url("grass.jpg");
+            background-repeat: no-repeat ;
+            background-size: cover;
+        }
+        #js{
+            text-align: center;
+            background-image: url("grass.jpg");
+            background-repeat: no-repeat ;
+            background-size: cover;   
+        }
+        #swift{
+            text-align: center;
+            background-image: url("grass.jpg");
+            background-repeat: no-repeat ;
+            background-size: cover;   
+        }
+        #scala{
+            text-align: center;
+            background-image: url("grass.jpg");
+            background-repeat: no-repeat ;
+            background-size: cover;   
+        }
+        #go{
+            text-align: center;
+            background-image: url("grass.jpg");
+            background-repeat: no-repeat ;
+            background-size: cover;   
+        }
+        #python{
+            text-align: center;
+            background-image: url("grass.jpg");
+            background-repeat: no-repeat ;
+            background-size: cover;   
+        }
+
+    </style>
+</head>
+
+<body>
+    <div data-role="page" data-theme="d">
+        <div data-role="header">
+            <h3>Top 5 programing languages</h3>
+        </div>
+        <div data-role="content">
+            <ul data-role="uix-mobile">
+                    <a data-role="button" data-theme="b" href="/app.html#js" data-icon="grid">Javascript</a>
+                    <a data-role="button" data-theme="a" href="/app.html#swift" data-icon="grid">Swift</a>
+                    <a data-role="button" data-theme="b" href="/app.html#scala" data-icon="grid">Scala</a>
+                    <a data-role="button" data-theme="a" href="/app.html#go" data-icon="grid">Go</a>
+                    <a data-role="button" data-theme="b" href="/app.html#python" data-icon="grid">Python</a>
+            </ul>
+
+        </div>
+        <div data-role="footer">
+            Copyright reserved &copy;
+        </div>
+    </div>
+    <div data-role="page" data-icon="grid" id="js">
+        <div data-role="header">
+            <h1>Javascript</h1>
+        </div>
+        <div data-role="content">
+            <img src="data:image/png;base64,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"
+                alt="">
+            <p>JavaScript (/ˈdʒɑːvəˌskrɪpt/),[8] often abbreviated as JS, is a programming language that conforms to the
+                ECMAScript specification.[9] JavaScript is high-level, often just-in-time compiled, and multi-paradigm.
+                It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class
+                functions.
+
+                Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web.[10] Over 97%
+                of websites use it client-side for web page behavior,[11] often incorporating third-party libraries.[12]
+                All major web browsers have a dedicated JavaScript engine to execute the code on the user's device.
+
+                As a multi-paradigm language, JavaScript supports event-driven, functional, and imperative programming
+                styles. It has application programming interfaces (APIs) for working with text, dates, regular
+                expressions, standard data structures, and the Document Object Model (DOM).
+
+                The ECMAScript standard does not include any input/output (I/O), such as networking, storage, or
+                graphics facilities. In practice, the web browser or other runtime system provides JavaScript APIs for
+                I/O.
+
+                JavaScript engines were originally used only in web browsers, but they are now core components of other
+                software systems, most notably servers and a variety of applications.
+
+                Although there are similarities between JavaScript and Java, including language name, syntax, and
+                respective standard libraries, the two languages are distinct and differ greatly in design.</p>
+        </div>
+    </div>
+    <div data-role="page" data-icon="grid" id="swift">
+        <div data-role="header">
+            <h1>Swift</h1>
+        </div>
+        <div data-role="content">
+            <img src="data:image/jpeg;base64,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"
+                alt="">
+            <p>Swift is a general-purpose, multi-paradigm, compiled programming language developed by Apple Inc. and the
+                open-source community, first released in 2014. Swift was developed as a replacement for Apple's earlier
+                programming language Objective-C, as Objective-C had been largely unchanged since the early 1980s and
+                lacked modern language features. Swift works with Apple's Cocoa and Cocoa Touch frameworks, and a key
+                aspect of Swift's design was the ability to interoperate with the huge body of existing Objective-C code
+                developed for Apple products over the previous decades. It is built with the open source LLVM compiler
+                framework and has been included in Xcode since version 6, released in 2014. On Apple platforms,[11] it
+                uses the Objective-C runtime library which allows C, Objective-C, C++ and Swift code to run within one
+                program.[12]
+
+                Apple intended Swift to support many core concepts associated with Objective-C, notably dynamic
+                dispatch, widespread late binding, extensible programming and similar features, but in a "safer" way,
+                making it easier to catch software bugs; Swift has features addressing some common programming errors
+                like null pointer dereferencing and provides syntactic sugar to help avoid the pyramid of doom. Swift
+                supports the concept of protocol extensibility, an extensibility system that can be applied to types,
+                structs and classes, which Apple promotes as a real change in programming paradigms they term
+                "protocol-oriented programming"[13] (similar to traits).[14]
+
+                Swift was introduced at Apple's 2014 Worldwide Developers Conference (WWDC).[15] It underwent an upgrade
+                to version 1.2 during 2014 and a major upgrade to Swift 2 at WWDC 2015. Initially a proprietary
+                language, version 2.2 was made open-source software under the Apache License 2.0 on December 3, 2015,
+                for Apple's platforms and Linux.[16][17]
+
+                Through version 3.0 the syntax of Swift went through significant evolution, with the core team making
+                source stability a focus in later versions.[18][19] In the first quarter of 2018 Swift surpassed
+                Objective-C in measured popularity.[20]
+
+                Swift 4.0, released in 2017, introduced several changes to some built-in classes and structures. Code
+                written with previous versions of Swift can be updated using the migration functionality built into
+                Xcode. Swift 5, released in March 2019, introduced a stable binary interface on Apple platforms,
+                allowing the Swift runtime to be incorporated into Apple operating systems. It is source compatible with
+                Swift 4.[21]
+
+                Swift 5.1 was officially released in September 2019. Swift 5.1 builds on the previous version of Swift 5
+                by extending the stable features of the language to compile-time with the introduction of module
+                stability. The introduction of module stability makes it possible to create and share binary frameworks
+                that will work with future releases of Swift.[22]</p>
+        </div>
+    </div>
+    <div data-role="page" data-icon="grid" id="scala">
+        <div data-role="header">
+            <h1>Scala</h1>
+        </div>
+        <div data-role="content">
+            <img src="data:image/png;base64,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"
+                alt="">
+            <p>Scala (/ˈskɑːlɑː/ SKAH-lah)[8] is a strong statically typed general-purpose programming language which
+                supports both object-oriented programming and functional programming. Designed to be concise,[9] many of
+                Scala's design decisions are aimed to address criticisms of Java.[7]
+
+                Scala source code can be compiled to Java bytecode and run on a Java virtual machine. Scala provides
+                language interoperability with Java so that libraries written in either language may be referenced
+                directly in Scala or Java code.[10] Like Java, Scala is object-oriented, and uses a curly-brace syntax
+                reminiscent of the C programming language. Since Scala 3, there is also the option to use indentation
+                for block building, and its use is advised. Martin Odersky has said that this has turned out to be the
+                most productive change introduced in Scala 3. [11]
+
+                Unlike Java, Scala has many features of functional programming languages like Scheme, Standard ML and
+                Haskell, including currying, immutability, lazy evaluation, and pattern matching. It also has an
+                advanced type system supporting algebraic data types, covariance and contravariance, higher-order types
+                (but not higher-rank types), and anonymous types. Other features of Scala not present in Java include
+                operator overloading, optional parameters, named parameters, and raw strings. Conversely, a feature of
+                Java not in Scala is checked exceptions, which has proved controversial.[12]</p>
+        </div>
+    </div>
+    <div data-role="page" data-icon="grid" id="go">
+        <div data-role="header">
+            <h1>Go</h1>
+        </div>
+        <div data-role="content">
+            <img src="data:image/png;base64,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"
+                alt="">
+            <p>From Wikipedia, the free encyclopedia
+                Jump to navigationJump to search
+                "Google Go" redirects here. For the Android search app by Google, "Google Go", for low-end Lollipop+
+                devices, see Android Go. For the computer program by Google to play the board game Go, see AlphaGo.
+                For the 2003 agent-based programming language, see Go! (programming language).
+                Go
+                Go Logo Blue.svg
+                Paradigm Multi-paradigm: concurrent, functional,[1] imperative, object-oriented[2][3]
+                Designed by Robert Griesemer
+                Rob Pike
+                Ken Thompson
+                Developer The Go Authors[4]
+                First appeared November 10, 2009; 11 years ago
+                Stable release
+                1.16.3[5] Edit this on Wikidata / 1 April 2021; 9 days ago
+                Typing discipline Inferred, static, strong, structural[6][7]
+                Implementation language Go, Assembly language (gc); C++ (gccgo)
+                OS DragonFly BSD, FreeBSD, Linux, macOS, NetBSD, OpenBSD,[8] Plan 9,[9] Solaris, Windows
+                License 3-clause BSD[4] + patent grant[10]
+                Filename extensions .go
+                Website golang.org
+                Major implementations
+                gc, gccgo
+                Influenced by
+                C, Python, Oberon-2, Limbo, Active Oberon, communicating sequential processes, Pascal, Oberon,
+                Smalltalk, Newsqueak, Modula-2, Alef, APL, BCPL, Modula, occam
+                Influenced
+                Odin, Crystal, Zig
+                Go is a statically typed, compiled programming language designed at Google[11] by Robert Griesemer, Rob
+                Pike, and Ken Thompson.[12] Go is syntactically similar to C, but with memory safety, garbage
+                collection, structural typing,[6] and CSP-style concurrency.[13] The language is often referred to as
+                Golang because of its domain name, golang.org, but the proper name is Go.[14]
+
+                There are two major implementations:
+
+                Google's self-hosting[15] compiler toolchain targeting multiple operating systems, and WebAssembly.[16]
+                gccgo, a GCC frontend.[17][18]
+                A third-party transpiler GopherJS[19] compiles Go to JavaScript for front-end web development.</p>
+        </div>
+    </div>
+    <div data-role="page" data-icon="grid" id="python">
+        <div data-role="header">
+            <h1>Python</h1>
+        </div>
+        <div data-role="content">
+            <img src="data:image/jpeg;base64,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"
+                alt="">
+            <p>From Wikipedia, the free encyclopedia
+                Jump to navigationJump to search
+                For other uses, see Python (disambiguation).
+                Python
+                Python logo and wordmark.svg
+                Paradigm Multi-paradigm: object-oriented,[1] procedural (imperative), functional, structured, reflective
+                Designed by Guido van Rossum
+                Developer Python Software Foundation
+                First appeared February 1991; 30 years ago[2]
+                Stable release
+                3.9.4[3] Edit this on Wikidata / 4 April 2021; 6 days ago
+                Preview release
+                3.10.0a7[4] Edit this on Wikidata / 6 April 2021; 4 days ago
+                Typing discipline Duck, dynamic, strong typing;[5] gradual (since 3.5, but ignored in CPython)[6]
+                OS Linux, macOS, Windows 8 and later
+                and more
+                License Python Software Foundation License
+                Filename extensions .py, .pyi, .pyc, .pyd, .pyo (prior to 3.5),[7] .pyw, .pyz (since 3.5)[8]
+                Website www.python.org
+                Major implementations
+                CPython, PyPy, Stackless Python, MicroPython, CircuitPython, IronPython, Jython
+                Dialects
+                Cython, RPython, Starlark[9]
+                Influenced by
+                ABC,[10] Ada,[11] ALGOL 68,[12] APL,[13] C,[14] C++,[15] CLU,[16] Dylan,[17] Haskell,[18] Icon,[19]
+                Java,[20] Lisp,[21] Modula-3,[15] Perl, Standard ML[13]
+                Influenced
+                Apache Groovy, Boo, Cobra, CoffeeScript,[22] D, F#, Genie,[23] Go, JavaScript,[24][25] Julia,[26] Nim,
+                Ring,[27] Ruby,[28] Swift[29]
+                Python Programming at Wikibooks
+                Python is an interpreted, high-level and general-purpose programming language. Python's design
+                philosophy emphasizes code readability with its notable use of significant indentation. Its language
+                constructs and object-oriented approach aim to help programmers write clear, logical code for small and
+                large-scale projects.[30]
+
+                Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including
+                structured (particularly, procedural), object-oriented and functional programming. Python is often
+                described as a "batteries included" language due to its comprehensive standard library.[31]
+
+                Guido van Rossum began working on Python in the late 1980s, as a successor to the ABC programming
+                language, and first released it in 1991 as Python 0.9.0.[32] Python 2.0 was released in 2000 and
+                introduced new features, such as list comprehensions and a garbage collection system using reference
+                counting and was discontinued with version 2.7.18 in 2020.[33] Python 3.0 was released in 2008 and was a
+                major revision of the language that is not completely backward-compatible and much Python 2 code does
+                not run unmodified on Python 3.
+
+                Python consistently ranks as one of the most popular programming languages.[34][35][36][37][38]</p>
+        </div>
+    </div>
+</body>
+
+</html>
